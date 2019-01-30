@@ -12,7 +12,7 @@ print(sc.version)
 import time
 
 
-data = sc.wholeTextFiles("file:///data2/sunandan/sparkex/sshrotri/allAbstracts/*.txt").map(lambda x: x[1])
+data = sc.wholeTextFiles("path_to_text_file/*.txt").map(lambda x: x[1])
 
 # Tokenize the data
 tokens = data.map(lambda document: document.strip().lower()) \
